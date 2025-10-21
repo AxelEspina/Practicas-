@@ -1,0 +1,90 @@
+body {
+  background-color: #020202;
+  font-family: 'Poppins', sans-serif;
+  color: #fa0000e7;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Movimiento del título */
+.titulo {
+  font-size: 2em;
+  color: #e04903;
+  margin: 20px 0;
+  position: relative;
+  animation: mover 10s linear infinite;
+}
+
+@keyframes mover {
+  0% { left: 100vw; }
+  100% { left: -100vw; }
+}
+
+/* Contenedor del catálogo */
+#catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Tarjetas */
+.tarjeta {
+  background: #000000;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255,107,0,0.3);
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen del producto */
+.tarjeta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Nombre */
+.tarjeta h2 {
+  color: #ff6b00;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Descripción */
+.tarjeta p {
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+/* Precio */
+.precio {
+  color: #00ff88;
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* Botón */
+.boton {
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.boton:hover {
+  background-color: #ff8533;
+}
